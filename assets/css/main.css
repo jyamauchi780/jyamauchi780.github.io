@@ -2175,7 +2175,7 @@ input, select, textarea {
 			.image.avatar img {
 				border-radius: 100%;
 				display: block;
-				width: 80%;
+                width: 100%;
 			}
 
 		.image.main {
