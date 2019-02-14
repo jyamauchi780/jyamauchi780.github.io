@@ -2864,7 +2864,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				width: 21em;
+				width: 17em;
 			}
 
 				#header > header {
@@ -2878,7 +2878,7 @@ input, select, textarea {
 		/* Wrapper */
 
 			#wrapper {
-				padding-right: 21em;
+				padding-right: 17em;
 			}
 
 		/* Main */
@@ -2902,13 +2902,13 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				width: 20em;
+				width: 15em;
 			}
 
 		/* Wrapper */
 
 			#wrapper {
-				padding-right: 20em;
+				padding-right: 15em;
 			}
 
 	}
