@@ -117,7 +117,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #4acaa8 !important;
+			color: #6AA897 !important;
 		}
 
 	strong, b {
@@ -1786,7 +1786,7 @@ input, select, textarea {
 	}
 
 	header.major h2 {
-		color: #4acaa8;
+		color: #6AA897;
 		font-size: 3.5em;
 	}
 
@@ -1849,7 +1849,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #4acaa8;
+			border-color: #6AA897;
 		}
 
 	select {
@@ -1949,7 +1949,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #4acaa8;
+			border-color: #6AA897;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2378,7 +2378,7 @@ input, select, textarea {
 			}
 
 			ul.feature-icons li:before {
-				background: #4acaa8;
+				background: #6AA897;
 				border-radius: 100%;
 				color: #ffffff;
 				display: block;
@@ -2594,7 +2594,7 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #4acaa8;
+			background-color: #6AA897;
 			color: #ffffff !important;
 		}
 
@@ -2676,9 +2676,9 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-/*		background: #4acaa8;*/
+		background: #6AA897;
         background: #6AA897;
-		color: #d2f2e9;
+		color: #6AA897;
 		height: 100%;
 		overflow-y: auto;
 		position: fixed;
@@ -2698,11 +2698,11 @@ input, select, textarea {
 			}
 
 		#header header p {
-			color: #b7eadc;
+			color: #6AA897;
 		}
 
 		#header a {
-			color: #d2f2e9;
+			color: #6AA897;
 		}
 
 			#header a:hover {
@@ -2719,8 +2719,9 @@ input, select, textarea {
 
 			#header > header .avatar {
 				display: block;
-				margin: 0 auto 2.25em auto;
-				width: 8em;
+/*				margin: 0 auto 2.25em auto;*/
+                margin: 2.95em auto 2.25em auto;
+				width: 7em;
 			}
 
 			#header > header h1 {
@@ -2730,7 +2731,7 @@ input, select, textarea {
 			}
 
 			#header > header p {
-				color: #d2f2e9;
+				color: #6AA897;
 				font-style: italic;
 				margin: 1em 0 0 0;
 			}
@@ -2751,7 +2752,7 @@ input, select, textarea {
 			}
 
 				#header > footer .icons li a {
-					color: #b7eadc;
+					color: #6AA897;
 				}
 
 		#header > nav {
@@ -3052,7 +3053,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #4acaa8;
+						background: #6AA897;
 						color: #ffffff;
 						content: '\f0c9';
 						display: block;
