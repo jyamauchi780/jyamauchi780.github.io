@@ -1,0 +1,651 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[dvipdfmx]{hyperref}
+\usepackage{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+\usepackage{pxjahyper}
+
+\newcounter{award}
+\setcounter{award}{6}
+\newcounter{trans}
+\setcounter{trans}{16}
+\newcounter{conf}
+\setcounter{conf}{17}
+\newcounter{jconf}
+\setcounter{jconf}{8}
+\newcounter{bookchapter}
+\setcounter{bookchapter}{2}
+\newcounter{tutorial}
+\setcounter{tutorial}{1}
+\newcounter{fund}
+\setcounter{fund}{5}
+% \newcounter{project}
+% \setcounter{project}{3}
+\newcounter{seminar}
+\setcounter{seminar}{6}
+\newcounter{misc}
+\setcounter{misc}{9}
+
+
+% Set your name here
+\def\name{Junya Yamauchi}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+% \def\footerlink{http://jblevins.org/projects/cv-template/}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {economics, statistics, mathematics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+% \begin{minipage}{0.45\linewidth}
+%   Assistant Professor \\
+%   Tokyo Institute of Technology \\
+%   Department of Systems and Control Engineering \\
+%   Smith Building \\
+%   Chapel Hill, NC 27599
+% \end{minipage}
+% \begin{minipage}{0.45\linewidth}
+%   \begin{tabular}{ll}
+%     Phone: & (919) 962-1234 \\
+%     Fax: &  (919) 962-5678 \\
+%     Email: & \href{mailto:hotelling@unc.edu}{\tt hotelling@unc.edu} \\
+%     Homepage: & \href{http://www.stat-or.unc.edu/}{\tt http://www.stat-or.unc.edu/} \\
+%   \end{tabular}
+% \end{minipage}
+Assistant Professor \\
+Department of Information Physics \& Computing, The University of Tokyo \\
+7-3-1, Hongo, Bunkyo-ku, Tokyo 113-8656, Japan \\
+Tel: +81-3-5841-6890, Email: {\tt junya\_yamauchi\verb|_at_|ipc.i.u-tokyo.jp} \\
+% Last updated: August 29, 2019
+Last updated: \today
+
+
+\section*{Academic Employment}
+
+\begin{itemize}
+  \item Department of Information Physics \& Computing, The University of Tokyo, April 2020–present
+  \item Assistant Professor, Department of Systems and Control Engineering, Tokyo Institute of Technology, April 2018 – March 2020
+\end{itemize}
+
+
+\section*{Education}
+
+\begin{itemize}
+  \item Dr. Eng., Department of Systems and Control Engineering, Tokyo Institute of Technology, March, 2018.
+  \item M. Eng., Department of Mechanical and Control Engineering, Tokyo Institute of Technology, March, 2015.
+  \item B. Eng., Department of Mechanical and Aerospace Engineering, Nagoya University, March, 2013
+\end{itemize}
+
+
+\section*{Research Interests}
+
+Autonomy of Cyber-Physical Systems, Vision-based estimation and control, Human-Robotic Netowrk Teaming
+
+\section*{Teaching}
+
+\begin{description}
+  \item[2021] 計数工学実験，システム情報工学実験第一
+  \item[2020] 計数工学実験，システム情報工学実験第一
+  \item[2019] 工学リテラシー
+  \item[2018, 2019] システム創造設計
+  \item[2018, 2019] システム創造プロジェクト
+\end{description}
+
+
+%------------------------------------------------------------------------
+%------------------------------------------------------------------------
+\section*{受賞}
+
+[\arabic{award}] 
+  Takeshi Hatanaka, Kosei Noda, Junya Yamauchi, Koji Sokabe, Keita Shimamoto and Masayuki Fujita, 
+  ``Human-Robot Collaboration with Variable Autonomy via Gaussian Process,'' 
+  IFAC CPHS 2020 Best Research Paper Prize, Dec., 2020 \\
+\addtocounter{award}{-1}
+
+[\arabic{award}] 
+  J. Yamauchi, T. Beckers, M. Omainska, T. Hatanaka, S. Hirche and M. Fujita, 
+  ``Visual Pursuit Control with Target Motion Learning via Gaussian Process,'' 
+  Finalists of SICE Annual Conference International Award, Sep., 2020 \\
+\addtocounter{award}{-1}
+
+[\arabic{award}] 
+  H. Dan, J. Yamauchi, T. Hatanaka and M. Fujita, 
+  ``Control Barrier Function-Based Persistent Coverage with Performance Guarantee and Application to Object Search Scenario,'' 
+  Finalists of 2020 IEEE CCTA Outstanding Student Paper Awards, Aug., 2020 \\
+\addtocounter{award}{-1}
+
+[\arabic{award}] 
+  M. W. S. Atman, K. Noda, R. Funada, J. Yamauchi, T. Hatanaka and M. Fujita, 
+  ``On Passivity-Shortage of Human Operators for A Class of Semi-autonomous Robotic Swarms,'' 
+  IFAC CPHS 2018 Young Author Prize, Dec., 2018 \\
+\addtocounter{award}{-1}
+
+[\arabic{award}] 
+  SICE 第3回 制御部門マルチシンポジウム学生ポスターセッション優秀発表賞,
+  ``受動性に基づく人間−ロボティックネットワークによる協調制御と人間受動性の解析,'' 2016 \\
+\addtocounter{award}{-1}
+
+[\arabic{award}]  
+  10th ASCC 2015 Best Paper Prize Award
+  ``Stochastic Performance Analysis of Visual Motion Observer and Experimental Verifications'' \\
+\addtocounter{award}{-1}
+
+
+
+
+%------------------------------------------------------------------------
+%------------------------------------------------------------------------
+\section*{論文（査読有）}
+
+[\arabic{trans}]  
+  山内淳矢, 足立智貴, 中山一秀, 畑中健志, 藤田政之, 
+  ``制御バリア関数に基づくロボットの安全性を考慮した球面上での持続的被覆制御,'', 
+  under preparation, 2022 \\
+\addtocounter{trans}{-1}
+
+[\arabic{trans}]  
+  Hayato Dan, Takeshi Hatanaka, Junya Yamauchi, Masayuki Fujita, 
+  ``Persistent Object Search and Surveillance Control with Safety Certificates for Drone Networks Based on Control Barrier Functions'', 
+  Frontiers in Robotics and AI, Vol. 8, pp. 1-13, Oct., 2021 \\
+  (\href{https://www.frontiersin.org/articles/10.3389/frobt.2021.740460/full}{DOI: 10.3389/frobt.2021.740460}) \\
+\addtocounter{trans}{-1}
+
+[\arabic{trans}]  
+  村尾俊幸, 小塩祐亮, 河合宏之, 山内淳矢, 畑中健志, 藤田政之, 
+  ``受動性に基づく人間–剛体ネットワークの動的協調制御'', 
+  電気学会論文誌 C, Vol. 141, No. 11, pp. 1165-1174, Nov., 2021 \\
+  (\href{https://www.jstage.jst.go.jp/article/ieejeiss/141/11/141_1165/_article/-char/ja/}{DOI: 10.1541/ieejeiss.141.1165}) \\
+\addtocounter{trans}{-1}
+
+[\arabic{trans}]  
+  Marco Omainska, Junya Yamauchi, Thomas Beckers, Takeshi Hatanaka, Sandra Hirche and Masayuki Fujita, 
+  ``Gaussian Process Based Visual Pursuit Control with Unknown Target Motion Learning in Three Dimensions'', 
+  SICE Journal of Control, Measurement, and System Integration, Vol. 14, No. 1, pp. 116-127, June, 2021 \\
+  (\href{https://www.tandfonline.com/doi/full/10.1080/18824889.2021.1936855}{DOI: 10.1080/18824889.2021.1936855}) \\
+\addtocounter{trans}{-1}
+
+[\arabic{trans}]  
+  山内淳矢, 玄長琢磨, 舩田陸, 畑中健志, 藤田政之, 
+  ``情報信頼度とエネルギー管理を考慮した視野重複を保証する持続的視覚被覆制御'', 
+  電気学会論文誌 C, Vol. 141, No. 3, pp. 417--425, Mar., 2021 \\
+  (\href{https://www.jstage.jst.go.jp/article/ieejeiss/141/3/141_417/_article/-char/ja/}{DOI: 10.1541/ieejeiss.141.417}) \\
+\addtocounter{trans}{-1}
+
+[\arabic{trans}] 
+  山内淳矢, 原田裕平, 畑中健志, 藤田政之, 
+  ``ネットワーク化視覚運動オブザーバに基づく3次元空間内での協調追尾制御,'' 
+  計測自動制御学会論文集, Vol. 56, No. 7, pp. 386--393, July, 2020 \\
+  (\href{https://www.jstage.jst.go.jp/article/sicetr/56/7/56_386/_article/-char/ja/}{DOI: 10.9746/sicetr.56.386}) \\
+\addtocounter{trans}{-1}
+
+[\arabic{trans}] 
+  R. Funada, X. Cai, G. Notomista, M.W.S. Atman, J. Yamauchi, M. Fujita and M. Egerstedt, 
+  ``Coordination of Robot Teams Over Long Distances From Georgia Tech to Tokyo Tech and Back; An 11,000km Multi-Robot Experiment,'' 
+  IEEE Control Systems Magazine, Vol. 40, No. 4, pp. 53--79, July, 2020 \\ 
+  (\href{https://ieeexplore.ieee.org/document/9143250}{DOI: 10.1109/MCS.2020.2990515}) \\
+\addtocounter{trans}{-1}
+
+[\arabic{trans}]  
+  T. Ibuki, S. Wilson, J. Yamauchi, M. Fujita and M. Egerstedt, 
+  ``Optimization Based Distributed Flocking Control for Multiple Rigid Bodies,'' 
+  IEEE Robotics and Automation Letters, Vol. 5, No. 2, pp. 1891--1898, Apr., 2020 \\
+  (\href{https://ieeexplore.ieee.org/document/8972380}{DOI: 10.1109/LRA.2020.2969950}) \\
+\addtocounter{trans}{-1}
+
+[\arabic{trans}]  
+  S. Yamashita, T. Hatanaka, J. Yamauchi and M. Fujita,
+  ``Passivity-Based Generalization of Primal-Dual Dynamics for Non-Strictly Convex Cost Functions,''
+  Automatica, Vol. 112, 108712, Feb., 2020 \\ 
+  (\href{https://www.sciencedirect.com/science/article/pii/S0005109819305758}{DOI: 10.1016/j.automatica.2019.108712}) \\
+\addtocounter{trans}{-1}
+
+[\arabic{trans}]  
+  山内淳矢, 土井護, 伊吹竜也, 畑中健志, 藤田政之, 
+  ``受動性に基づく3次元空間内での外乱を考慮した剛体運動同期制御,'' 
+  計測自動制御学会論文集, Vol. 55, No. 12, pp. 808--815, 2019 \\ 
+  (\href{https://www.jstage.jst.go.jp/article/sicetr/55/12/55_808/_article/-char/ja/}{DOI: 10.9746/sicetr.55.80}) \\
+\addtocounter{trans}{-1}
+
+[\arabic{trans}] ~ 
+  A.W. Farras, T. Hatanaka, T.W. Nguyen, R. Funada, J. Yamauchi and M. Fujita, 
+  ``Distributed Dynamic Reference Governor for Constrained Semi-Autonomous Robotic Swarms with Communication Delays and Experimental Verification,''
+  SICE Journal of Control, Measurement, and System Integration, Vol. 12, No. 6, pp 237--245, 2019 \\ 
+  (\href{https://www.jstage.jst.go.jp/article/jcmsi/12/6/12_237/_article/-char/en}{DOI: 10.9746/jcmsi.12.237}) \\
+\addtocounter{trans}{-1}
+
+[\arabic{trans}] ~ 
+  M.W.S. Atman, T. Hatanaka, Z. Qu, N. Chopra, J. Yamauchi, M. Fujita,
+  ``Human-enabled Motion Synchronization for Semi-autonomous Robotic Swarm with A Passivity-short Human Operator,''
+  Special Issue on Human-Centered Robotics, International Journal of Intelligent Robotics and Applications, Vol. 2, No. 2, pp. 235--251, 2018 \\
+  (\href{https://doi.org/10.1007/s41315-018-0056-8}{DOI: 10.1007/s41315-018-0056-8}) \\
+\addtocounter{trans}{-1}
+
+[\arabic{trans}] ~ 山内淳矢, M.W.S. Atman, 畑中健志，藤田政之,
+  ``ロボット間の通信遅れを考慮した人間ーロボティックネットワークの協調制御：受動性アプローチ,''
+  計測自動制御学会論文集, Vol. 53, No. 12, pp. 663--670, 2017 \\
+  (\href{https://doi.org/10.9746/sicetr.53.663}{DOI: 10.9746/sicetr.53.663}) \\
+\addtocounter{trans}{-1}
+
+[\arabic{trans}]  
+  T. Hatanaka, N. Chopra, J. Yamauchi, M. Doi, Y. Kawai and M. Fujita,
+  ``A Passivity-Based System Design of Semi-autonomous Cooperative Robotic Swarm,''
+  ASME DSC Magazine, Vol. 15, No. 2, pp. 14--18, 2017 \\ 
+  (\href{http://memagazineselect.asmedigitalcollection.asme.org/article.aspx?articleid=2676649}{DOI: 10.1115/1.2017-Jun-6}) \\
+\addtocounter{trans}{-1}
+
+[\arabic{trans}] 
+  T. Hatanaka, N. Chopra, J. Yamauchi and M. Fujita,
+  ``A Passivity-Based Approach to Human-Swarm Collaborations and Passivity Analysis of Human Operators,''
+  Trends in Control and Decision-Making for Human-Robot Collaboration Systems, Y. Wang and F. Zhang (eds.), Springer-Verlag, pp. 325--355, 2017 \\
+  (\href{http://memagazineselect.asmedigitalcollection.asme.org/article.aspx?articleid=2676649}{DOI: 10.1007/978-3-319-40533-9\_14}) \\
+\addtocounter{trans}{-1}
+
+[\arabic{trans}] ~ 
+  山内淳矢, 佐藤訓志, 畑中健志, 藤田政之,
+  ``視覚運動オブザーバの確率的推定性能解析,'' 
+  システム制御情報学会論文誌, Vol. 27, No. 11, pp. 443--451, 2014 \\ 
+  (\href{http://doi.org/10.5687/iscie.27.443}{DOI: 10.5687/iscie.27.443}) \\
+\addtocounter{trans}{-1}
+
+
+
+%------------------------------------------------------------------------
+%------------------------------------------------------------------------
+\section*{国際会議論文（査読有）}
+
+[\arabic{conf}]  
+  K. Mizuta, Y. Hirohata, J. Yamauchi and Masayuki Fujita,
+  ``Safe Persistent Coverage Control with Control Barrier Functions based on Sparse Bayesian Learning,''
+  under preparation, 2022 \\
+\addtocounter{conf}{-1}
+
+[\arabic{conf}]  
+  J. Yamauchi, M. Omainska, T. Beckers, T. Hatanaka, S. Hirche and M. Fujita,
+  ``Cooperative Visual Pursuit Control with Learning of Position Dependent Target Motion via Gaussian Process,''
+  Proc. the 60th IEEE Conference on Decision and Control (CDC), pp. 400-403, Dec., 2021 \\
+  (\href{https://ieeexplore.ieee.org/document/9683432}{DOI: 10.1109/CDC45484.2021.9683432}) \\
+\addtocounter{conf}{-1}
+
+[\arabic{conf}]  
+  J. Yamauchi, T. Adachi and M. Fujita,
+  ``Optimization Based 3D Object Monitoring with Robot Safety by Control Barrier Functions on a Sphere,''
+  Proc. 60th Annual Conference of the Society of Instrument and Control Engineers of Japan (SICE), pp. 400-403, Sep., 2021 \\
+\addtocounter{conf}{-1}
+
+[\arabic{conf}]  
+  T. Hatanaka, K. Noda, J. Yamauchi, K. Sokabe, K. Shimamoto and M. Fujita,
+  ``Human-Robot Collaboration with Variable Autonomy via Gaussian Process,''
+  Proc. 3rd IFAC Workshop on Cyber-Physical \& Human Systems, pp. 126-133, Dec., 2020 \\ 
+  (\href{https://www.sciencedirect.com/science/article/pii/S2405896321001774}{DOI: 10.1016/j.ifacol.2021.04.091}) \\
+\addtocounter{conf}{-1}
+
+[\arabic{conf}]  
+  J. Yamauchi, T. Beckers, M. Omainska, T. Hatanaka, S. Hirche and M. Fujita,
+  ``Visual Pursuit Control with Target Motion Learning via Gaussian Process,''
+  Proc. 59th Annual Conference of the Society of Instrument and Control Engineers of Japan (SICE), pp. 1365-1372, Sep., 2020 \\ 
+  (\href{https://ieeexplore.ieee.org/document/9240221}{DOI: 10.23919/SICE48898.2020.9240221}) \\
+\addtocounter{conf}{-1}
+
+[\arabic{conf}]  
+  H. Dan, J. Yamauchi, T. Hatanaka and M. Fujita,
+  ``Control Barrier Function-Based Persistent Coverage with Performance Guarantee and Application to Object Search Scenario,''
+  Proc. the 4th IEEE International Conference on Control Technology and Applications (CCTA), pp. 640-647, Aug., 2020 \\ 
+  (\href{https://ieeexplore.ieee.org/document/9206273}{DOI: 10.1109/CCTA41146.2020.9206273}) \\
+\addtocounter{conf}{-1}
+
+[\arabic{conf}]  
+  R. Funada, M. Santos, T. Gencho, J. Yamauchi, M. Fujita and M. Egerstedt,
+  ``Visual Coverage Maintenance for Quadcopters Using Nonsmooth Barrier Functions,''
+  Proc. 2020 International Conference on Robotics and Automation (ICRA), pp. 3255--3261, May, 2020 \\
+  (\href{https://ieeexplore.ieee.org/document/9196650}{DOI: 10.1109/ICRA40945.2020.9196650}) \\
+\addtocounter{conf}{-1}
+
+[\arabic{conf}]  
+  T. Ibuki, S. Wilson, J. Yamauchi, M. Fujita and M. Egerstedt,
+  ``Optimization Based Distributed Flocking Control for Multiple Rigid Bodies,''
+  Proc. 2020 International Conference on Robotics and Automation (ICRA), WeC11.5, May, 2020 \\
+\addtocounter{conf}{-1}
+
+[\arabic{conf}]  
+  A.W. Farras, J. Yamauchi, T. Hatanaka and M. Fujita,
+  ``Safe Cooperative Control of Human Robotic Network Teaming with Control Barrier Function,''
+  Proc. the 2020 SICE International Symposium on Control Systems (ISCS),  pp. 33--39, Mar., 2020 \\ 
+  (\href{https://ieeexplore.ieee.org/document/9083486}{DOI: 10.23919/SICEISCS48470.2020.9083486}) \\
+\addtocounter{conf}{-1}
+
+[\arabic{conf}]  
+  G. Notomista, X. Cai, J. Yamauchi and M. Egerstedt,
+  ``Passivity-Based Decentralized Control of Multi-Robot Systems with Delays Using Control Barrier Functions,''
+  Proc. of 2019 International Symposium on Multi-Robot and Multi-Agent Systems (MRS), USA, Aug. 22--23, FrPP6T1.1, 2019 \\ 
+  (\href{https://ieeexplore.ieee.org/document/8901085}{DOI: 10.1109/MRS.2019.8901085}) \\
+\addtocounter{conf}{-1}
+
+[\arabic{conf}] 
+  R. Funada, M. Santos, J. Yamauchi, T. Hatanaka, M. Fujita and M. Egerstedt,
+  ``Visual Coverage Control for Teams of Quadcopters via Control Barrier Functions,''
+  Proc. of 2019 International Conference on Robotics and Automation (ICRA), May. 20-24, Montreal, Canada, pp. 3010--3016, 2019 \\
+  (\href{https://ieeexplore.ieee.org/document/8793477}{DOI: 10.1109/ICRA.2019.8793477}) \\
+\addtocounter{conf}{-1}
+
+[\arabic{conf}]  
+  M. W. S. Atman, K. Noda, R. Funada, J. Yamauchi, T. Hatanaka and M. Fujita,
+  ``On Passivity-Shortage of Human Operators for A Class of Semi-autonomous Robotic Swarms,''
+  Proc. of 2nd IFAC Conference on Cyber-Physical ~ Human Systems, Dec. 14-15, Florida, USA, pp. 21--27, 2018 \\
+  (\href{https://doi.org/10.1016/j.ifacol.2019.01.008}{DOI: 10.1016/j.ifacol.2019.01.008}) \\
+\addtocounter{conf}{-1}
+
+[\arabic{conf}]  
+  T. Hatanaka, A. W. Farras, J. Yamauchi and M. Fujita
+  ``A passivity-based approach to distributed reference management for constrained semi-autonomous robotic swarms with communication delays,''
+  Proc. of SICE Annual Conference 2018, Sep. 11-14, Nara, Japan, pp. 563--566, 2018 \\
+\addtocounter{conf}{-1}
+
+[\arabic{conf}] 
+  M.W.S. Atman, J. Hay, J. Yamauchi, T. Hatanaka and M. Fujita,
+  ``Two Variations of Passivity-Short-Based Semi-autonomous Robotic Swarms and Their Experimental Analysis,''
+  Proc. of SICE International Symposium on Control Systems (ISCS) 2018, Japan, pp. 12--19, 2018 \\
+  (\href{http://ieeexplore.ieee.org/document/8330150/}{DOI: 10.23919/SICEISCS.2018.8330150}) \\
+\addtocounter{conf}{-1}
+
+[\arabic{conf}]  
+  J. Yamauchi, K. Kizaki, T. Ibuki, S. Satoh, T. Hatanaka and M. Fujita
+  ``Performance Analysis of Visual Feedback Leader-Following Pose Synchronization with Stochastic Uncertain Leader in Three Dimensions,''
+  Proc. 1st IEEE Conference on Control Technology and Applications, pp. 349--354, US, 2017 \\
+  (\href{http://ieeexplore.ieee.org/document/8062487/}{DOI: 10.1109/CCTA.2017.8062487}) \\
+\addtocounter{conf}{-1}
+
+[\arabic{conf}]  
+  J. Yamauchi, M.W.S. Atman, T. Hatanaka, N. Chopra and M. Fujita,
+  ``Passivity-Based Control of Human-Robotic Networks with Inter-Robot Communication Delays and Experimental Verification,''
+  Proc. 2017 IEEE International Conference on Advanced Intelligent Mechatronics, pp. 628--633, Germany, 2017 \\
+  (\href{http://ieeexplore.ieee.org/document/8014087/}{DOI: 10.1109/AIM.2017.8014087}) \\
+\addtocounter{conf}{-1}
+
+[\arabic{conf}] 
+  J. Yamauchi, S. Nakano, S. Satoh, T. Hatanaka and M. Fujita,
+  ``Stochastic Performance Analysis of Visual Motion Observer and Experimental Verifications,''
+  Proc. of 10th Asian Control Conference 2015, pp. 797--802, Kota Kinabalu, Malaysia, May 31-June 3, 2015 \\
+  (\href{http://ieeexplore.ieee.org/document/7244515/}{DOI: 10.1109/ASCC.2015.7244515}) \\
+\addtocounter{conf}{-1}
+
+
+
+%------------------------------------------------------------------------
+%------------------------------------------------------------------------
+\section*{著書（分担執筆）}
+
+[\arabic{bookchapter}] 
+  T. Hatanaka, J. Yamauchi, M. Fujita and H. Handa, 
+  "Contemporary Issues and Advances in Human-Robot Collaborations," 
+  Cyber-Physical-Human Systems: Fundamentals and Applications, A. Annaswamy, P.P. Khargonekar, F. Lamnabhi-Lagarrigue and S.K. Spurgeon (eds.), Wiley, under review, 2022 \\
+\addtocounter{bookchapter}{-1}
+
+[\arabic{bookchapter}] 
+  T. Hatanaka, N. Chopra, J. Yamauchi and M. Fujita, 
+  "A Passivity-Based Approach to Human-Swarm Collaborations and Passivity Analysis of Human Operators," 
+  Trends in Control and Decision-Making for Human-Robot Collaboration Systems, Y. Wang and F. Zhang (eds.), Springer-Verlag, pp. 325-355, 2017 \\
+  (DOI: 10.1007/978-3-319-40533-9\_14) \\
+\addtocounter{bookchapter}{-1}
+
+
+
+%------------------------------------------------------------------------
+%------------------------------------------------------------------------
+\section*{国内会議発表 (査読無)}
+
+[\arabic{jconf}]  
+  冨田佳秀，仲野太喜，山内淳矢，中山一秀，畑中健志，藤田政之,
+  ``制御バリア関数に基づく対象領域の切り替えを伴う可視性を考慮した被覆制御,'' 
+  第9回計測自動制御学会制御部門マルチシンポジウム, to be presented, Mar., 2022 \\
+\addtocounter{jconf}{-1}
+
+[\arabic{jconf}]  
+  足立智貴, 山内淳矢, 中山一秀, 畑中健志, 藤田政之, 
+  ``ロボットの安全性を考慮した球面上での持続的被覆制御による立体物モニタリング,'' 
+  第8回計測自動制御学会制御部門マルチシンポジウム, 3E2-4, Mar., 2021 \\
+\addtocounter{jconf}{-1}
+
+[\arabic{jconf}]  
+  山内淳矢, Jae-Yu Yeh, 檀隼人, 畑中健志, 藤田政之, 
+  ``制御バリア関数に基づく被覆性能を考慮した持続被覆制御の分散化手法の提案,'' 
+  第63回自動制御連合講演会, pp. 643-646, Nov., 2020 \\
+\addtocounter{jconf}{-1}
+
+[\arabic{jconf}]  
+  山内, 藤田, 
+  ``内部モデル原理に基づく外乱除去による剛体運動同期制御,'' 
+  第7回 制御部門マルチシンポジウム, 1H2-3, Mar., 2019 \\
+\addtocounter{jconf}{-1}
+
+[\arabic{jconf}]  
+  山内, 2018年度第2回超スマート社会推進フォーラム, 東京, Feb., 22, 2019 \\
+\addtocounter{jconf}{-1}
+
+[\arabic{jconf}]  
+  山内, 畑中, 藤田,
+  ``受動性に基づく人間ーロボティックネットワークによる協調制御と人間受動性の解析,''
+  SICE 第3回 制御部門マルチシンポジウム, 愛知，Mar. 7-10, PS-15, 2016 \\
+\addtocounter{jconf}{-1}
+
+[\arabic{jconf}]  
+  山内, 佐藤, 畑中, 藤田,
+  ``確率外乱を受ける対象運動に対する視覚オブザーバの推定性能解析,''
+  SICE 第1回 制御部門マルチシンポジウム, 東京，Mar. 4-7, PS-22, 2014 \\
+\addtocounter{jconf}{-1}
+
+[\arabic{jconf}] 
+  山内, 石川, 藤本, 早川,
+  ``相互作用するシステムに対する分散的な故障検出器の設計,''
+  第57回システム制御情報学会研究発表講演会，神戸，2013 \\
+\addtocounter{jconf}{-1}
+
+
+
+%------------------------------------------------------------------------
+%------------------------------------------------------------------------
+\section*{解説記事}
+
+[\arabic{tutorial}] 
+  山内淳矢, 畑中健志，藤田政之, 
+  "剛体運動の受動性と視覚追尾制御," 
+  システム/制御/情報，Vol. 64, No. 12, pp. 465-470, 2020 \\
+  (DOI: 10.11509/isciesci.64.12\_465) \\
+\addtocounter{tutorial}{-1}
+
+
+%------------------------------------------------------------------------
+%------------------------------------------------------------------------
+\section*{外部資金とプロジェクト}
+
+[\arabic{fund}] 
+  科学研究費補助金 基盤研究C（分担） (課題番号：21K04104) 
+  題目：半自律型分散協調農場モニタリング制御システムの構築と検証 \\
+\addtocounter{fund}{-1}
+
+[\arabic{fund}]  
+  科学研究費補助金　若手研究 (課題番号：20K14761) 
+  題目：不確かさを考慮した実時間最適化に基づくロボット群の自律協調制御システム構築 \\
+\addtocounter{fund}{-1}
+
+[\arabic{fund}]  
+  広域基礎研究塾 新研究挑戦奨励金，ドローン群による立体構造物の協調点検および点検項目の評価・抽出，2019 \\
+\addtocounter{fund}{-1}
+
+[\arabic{fund}]  
+  科学研究費補助金　研究活動スタート支援 (課題番号：18H05903)
+  題目：持続的環境モニタリングに向けた協調自律モバイルセンサネットワークシステムの構築 \\
+\addtocounter{fund}{-1}
+
+[\arabic{fund}] 
+  科学研究費補助金 基盤研究B（分担） (課題番号：18H01459)
+  題目：人とロボット群の協調を実現する相互学習型分散制御システムの構築 \\
+\addtocounter{fund}{-1}
+
+
+%------------------------------------------------------------------------
+%------------------------------------------------------------------------
+% \section*{プロジェクト}
+
+
+
+
+
+%------------------------------------------------------------------------
+%------------------------------------------------------------------------
+\section*{セミナー}
+
+[\arabic{seminar}]  
+  Passivity-Based Control of Human-Robotic Networks with Inter-Robot Communication Delays, 
+  Georgia Institute of Technology, USA, March 13, 2019 \\
+\addtocounter{seminar}{-1}
+
+[\arabic{seminar}]  
+  Passivity-Based Cooperative Control of Human-Robotic Network and Human Passivity Analysis, 
+  University of Stuttgart, Germany, November 21, 2018 \\
+\addtocounter{seminar}{-1}
+
+[\arabic{seminar}] 
+  Passivity-Based Cooperative Control of Human-Robotic Network and Human Passivity Analysis, 
+  Otto von Guericke University Magdeburg, Germany, November 13, 2018 \\
+\addtocounter{seminar}{-1}
+
+[\arabic{seminar}] 
+  Performance Analysis of Cooperative Visual Feedback Control for Uncertain Target Motion Tracking in 3-Dimensional Space, 
+  Technical University of Munich, Germany, September 26, 2018 \\
+\addtocounter{seminar}{-1}
+
+[\arabic{seminar}] 
+  Passivity-based Cooperative Control of Human-Robotic Network, 
+  Ulm University, Germany, June 27, 2017 \\
+\addtocounter{seminar}{-1}
+
+[\arabic{seminar}] 
+  Passivity-based Cooperative Control of Human-Robotic Network, 
+  Technical University of Munich, Germany, June 22, 2017 \\
+\addtocounter{seminar}{-1}
+
+
+
+%------------------------------------------------------------------------
+%------------------------------------------------------------------------
+\section*{その他}
+
+[\arabic{misc}] 
+  東京工業大学 未来社会 DESIGN 機構 (DLab) 研究奨励金 (DLab Challenge)， 
+  偶察力の強化による学際的共同研究促進のための研究者ネットワーク構築，学外協力者，2021 \\
+\addtocounter{misc}{-1}
+
+[\arabic{misc}] 
+東京工業大学 未来社会 DESIGN 機構 (DLab) 研究奨励金 (DLab Challenge)，創造的共同 研究が「湧き上がる」研究者間ネットワーク構築の実践的研究，学外協力者，2020 \\
+\addtocounter{misc}{-1}
+
+[\arabic{misc}] 
+  東京工業大学令和元年度工学院共通経費（助教インセンティブ研究経費），2019 \\
+\addtocounter{misc}{-1}
+
+[\arabic{misc}] 
+  イノベーションジャパン2019 大学見本市，"超スマート社会に貢献する5G ・ Robot ・ CPHS"，2019 \\
+\addtocounter{misc}{-1}
+
+[\arabic{misc}] 
+  東京工業大学基礎研究機構広域基礎研究室，2Q，2019 \\
+\addtocounter{misc}{-1}
+
+[\arabic{misc}] 
+  平成30年度海外大学重点校への教員派遣，2018 \\
+\addtocounter{misc}{-1}
+
+[\arabic{misc}] 
+  東京工業大学 工学院 統合IoT技術グループ \\
+\addtocounter{misc}{-1}
+
+[\arabic{misc}] 
+  平成29年度公益財団法人三豊科学技術振興協会国際交流助成,
+  ``Passivity-Based Control of Human-Robotic Networks with Inter-Robot Communication Delays and Experimental Verifications,'' 2017 \\
+\addtocounter{misc}{-1}
+
+[\arabic{misc}]  
+  平成27年度公益財団法人三豊科学技術振興協会国際交流助成
+  ``Stochastic Performance Analysis of Visual Motion Observer and Experimental Verification,'' 2015 \\
+\addtocounter{misc}{-1}
+
+
+\bigskip
+
+% Footer
+% \begin{center}
+%   \begin{footnotesize}
+%     Last updated: \today \\
+%     \href{\footerlink}{\texttt{\footerlink}}
+%   \end{footnotesize}
+% \end{center}
+
+\end{document}
