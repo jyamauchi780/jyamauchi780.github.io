@@ -1,0 +1,18 @@
+# build folder
+build/
+
+# Movie folder
+Movie/
+
+# Video files
+*.mp4
+
+# Matlab data files
+*.mat
+
+# VSCode generated files
+.vs
+.vscode
+
+# MacOS generated files
+.DS_Store
