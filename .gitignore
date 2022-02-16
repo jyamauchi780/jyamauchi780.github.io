@@ -1,14 +1,11 @@
 # build folder
-build/
-
-# Movie folder
-Movie/
-
-# Video files
-*.mp4
-
-# Matlab data files
-*.mat
+*.aux
+*.dvi
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
 
 # VSCode generated files
 .vs
